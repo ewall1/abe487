@@ -4,7 +4,7 @@ set -u
 
 if [[ $# -lt 1 ]]; then
 
-printf "Usage: %s requires that a file be submitted for cat-n\n" $0
+printf "OOPS! Usage: %s requires that a file be submitted for concatenation!\n" $0
 
 exit 1
 

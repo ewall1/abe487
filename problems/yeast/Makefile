@@ -45,7 +45,7 @@ verified-genes: features
 	 cut -f 3 SGD_features.tab | grep Verified | grep -v 'silence' | wc -l > verified-genes
 
 uncharacterized-genes: features
-	grep 'Uncharacterized' ~/metagenomics-book/problems/yeast/SGD_features.tab | wc -l > uncharacterized-genes
+	grep 'Uncharacterized' SGD_features.tab | wc -l > uncharacterized-genes
 
 gene-types: features
 	cut -f 3 SGD_features.tab | sort | uniq -c > gene-types
